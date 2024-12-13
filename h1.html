@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Manager </title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>CRUDS</h2>
+            <p>Product managment System</p>
+        </div>
+
+
+        <div class="inputs">
+            <input type="text" name="" id="tittle" placeholder="tittle">
+            <div class="price">
+                <input  type="number" id="price" placeholder="price">
+                <input  type="number" id="tax" placeholder="tax">
+                <input  type="number" id="ads" placeholder="ads">
+                <input  type="number" id="discount" placeholder="discount">
+                <small id="total"></small>
+            </div>
+            <input type="number" name="" id="count" placeholder="count">
+            <input type="text" name="" id="category" placeholder="category">
+            <button id="submit">Create</button>
+        </div>
+
+
+        <div class="outputs">
+            <div class="searchBlock">
+                <input type="text" name="" id="search" placeholder="search" >
+                <div class="btnSerach">
+                    <button  id="serachTitle">
+                        Search by title
+                    </button>
+                    <button  id="searchCategory">
+                        Search by category
+                    </button>
+                </div>
+            </div>
+            <div id="deleteAll">
+
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>tittle</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delet</th>
+                </tr>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
