@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Manager </title>
+    <title>Document</title>
     <link rel="stylesheet" href="stylee.css">
 </head>
 <body>
@@ -17,10 +17,10 @@
         <div class="inputs">
             <input type="text" name="" id="tittle" placeholder="tittle">
             <div class="price">
-                <input  type="number" id="price" placeholder="price">
-                <input  type="number" id="tax" placeholder="tax">
-                <input  type="number" id="ads" placeholder="ads">
-                <input  type="number" id="discount" placeholder="discount">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" id="tax" placeholder="tax">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
                 <small id="total"></small>
             </div>
             <input type="number" name="" id="count" placeholder="count">
@@ -31,12 +31,12 @@
 
         <div class="outputs">
             <div class="searchBlock">
-                <input type="text" name="" id="search" placeholder="search" >
+                <input type="text" name="" id="search" placeholder="search" onkeyup="searchData(this.value)">
                 <div class="btnSerach">
-                    <button  id="serachTitle">
+                    <button onclick="search(this.id)" id="serachTitle">
                         Search by title
                     </button>
-                    <button  id="searchCategory">
+                    <button onclick="search(this.id)" id="searchCategory">
                         Search by category
                     </button>
                 </div>
